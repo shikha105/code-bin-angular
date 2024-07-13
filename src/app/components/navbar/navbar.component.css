@@ -1,0 +1,60 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Navigation bar styles */
+nav {
+  background: #333;
+  color: #fff;
+  padding: 1em;
+}
+
+nav h2 {
+  display: inline-block;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav h2 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+  margin-left: 2em;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 1em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #555;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 2em 0;
+}
