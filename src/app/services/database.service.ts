@@ -10,12 +10,13 @@ import {
 import { AuthService } from './auth.service';
 import { Title } from '@angular/platform-browser';
 import { Snippet } from '../../models/snippet';
+import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root',
 })
 export class DatabaseService {
   private db?: any;
-  constructor(private authService: AuthService) {
+  constructor(private authService: AuthService, private router: Router) {
     this.db = getFirestore();
   }
 
@@ -25,6 +26,7 @@ export class DatabaseService {
         ...snippet,
         by: this.authService.getUid(),
       });
+      this.router.navigate(['/']);
       console.log('Document written with ID: ', docRef.id);
     } catch (e) {
       console.error('Error adding document: ', e);
