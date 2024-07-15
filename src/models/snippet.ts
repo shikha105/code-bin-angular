@@ -1,1 +1,1 @@
-export type Snippet = { title: string; code: string };
+export type Snippet = { title: string; code: string; id: string };

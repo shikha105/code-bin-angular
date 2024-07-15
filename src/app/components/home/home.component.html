@@ -1,1 +1,11 @@
-<p>home works!</p>
+<div>
+  <ul>
+    @for(cs of codeSnippets; track cs){
+    <li>
+      <a [routerLink]="['/snippet', cs.id]">{{ cs.title }}</a>
+    </li>
+    } @empty {
+    <li>No items found</li>
+    }
+  </ul>
+</div>

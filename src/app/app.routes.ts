@@ -5,6 +5,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AboutComponent } from './components/about/about.component';
 import { CreateBinComponent } from './components/create-bin/create-bin.component';
 import { authGuard } from './guards/auth.guard';
+import { HomeComponent } from './components/home/home.component';
+import { ViewSnippetComponent } from './components/view-snippet/view-snippet.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -21,6 +23,7 @@ export const routes: Routes = [
     component: CreateBinComponent,
     canActivate: [authGuard],
   },
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
+  { path: 'snippet/:id', component: ViewSnippetComponent },
   { path: '**', component: NotFoundComponent },
 ];
