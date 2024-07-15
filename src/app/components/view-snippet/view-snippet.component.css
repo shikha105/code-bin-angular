@@ -1,0 +1,28 @@
+/* Container div styling */
+div {
+  padding: 20px;
+  background-color: #f4f4f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Heading styling */
+div h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+div p {
+  font-size: 16px;
+  color: #555;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  white-space: pre-wrap; /* Preserves whitespace formatting in code snippets */
+  font-family: "Courier New", Courier, monospace; /* Use monospaced font for code */
+}
