@@ -1,0 +1,11 @@
+<button #notplaceholder>this is not placeholder</button>
+
+@defer(on hover(notplaceholder)) {
+<app-heavy></app-heavy>
+} @placeholder {
+<button>placeholder</button>
+} @loading(after 100ms; minimum 1s){
+<p>the content is loading bro</p>
+} @error {
+<p>there is something wrong</p>
+}
